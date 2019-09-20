@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class StringHandling {
 
@@ -51,15 +52,28 @@ public class StringHandling {
        Boolean b =collegeName.contains("College");
        System.out.println(b);
 
-       
+
+       /*nt a[]= {1,2,3,4,5};
+
+       int b[]= new int[]{6,7,8,9,10};
+
+       int c[]=new int[10];
+
+        int c[];
+        */
+
+        char c[] = collegeName.toCharArray();
+        char rev[]=new char[c.length];
+        int cnt=0;
+        for(int i=c.length-1;i >=0; i--)
+        {
+            rev[cnt++]=c[i];
 
 
 
-
-
-
-
-
+        }
+        String reverseString= new String(rev);
+        System.out.println("Reverse String = " + reverseString);
 
 
     }
